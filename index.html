@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/index.css">
+  <meta name="description" content="La mejor aplicación del clima">
+  <title>Weather App</title>
+</head>
+<body>
+  <div class="loading" id="loading"></div>
+  <div class="app" id="app" hidden>
+    <div class="currentWeather">
+      <p id="current-weather-temp" class="currentWeather-temp"></p>
+      <div>
+        <p id="current-weather-date" class="currentWeather-date"></p>
+        <p id="current-weather-city" class="currentWeather-city"></p>
+      </div>
+    </div>
+    <div class="weeklyWeather">
+      <div class="weeklyWeather-marker" data-marker="true"></div>
+      <div class="tabs" id="tabs">
+        <div class="tabList" role="tablist">
+          <div class="tab" role="tab" aria-selected="true" id="tab-0"></div>
+          <div class="tab" role="tab" id="tab-1"></div>
+          <div class="tab" role="tab" id="tab-2"></div>
+          <div class="tab" role="tab" id="tab-3"></div>
+          <div class="tab" role="tab" id="tab-4"></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script src="./js/index.js" type="module"></script>
+</body>
+</html>
