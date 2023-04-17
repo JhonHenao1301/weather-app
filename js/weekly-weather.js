@@ -48,8 +48,8 @@ function configCurrentDayInfo(weather, tabIndex, index, cont) {
 
 export default async function weeklyWeather() {
     const $container = document.querySelector('.weeklyWeather')
-    debugger
-    console.log('yeah') 
+    // console.log('yeah') 
+    // debugger
     const { lat, lon, isError } = await getLatLon()
     if (isError) return console.log('Hubo un error ubicandote')
     const { isError: weeklyWeatherError, data:weather } = await getWeeklyWeather(lat, lon)
