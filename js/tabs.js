@@ -1,6 +1,7 @@
 
 const $tabContainer = document.querySelector('#tabs')
 const $tabList = $tabContainer.querySelectorAll('.tab')
+// console.log($tabList)
 
 const today = new Date()
 let weekDay = today.getDay()
@@ -47,5 +48,7 @@ function handleSelectTabClick(event) {
         $tabPanel.hidden = false
         $tabPanelSelected.hidden = true
     }
-    // debugger
+
+    const $currentWeatherList = document.querySelectorAll('.currentWeather-item')
+    $currentWeatherList.forEach(i => i.classList.remove('item-is-selected'))
 }

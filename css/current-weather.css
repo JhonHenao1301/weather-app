@@ -28,3 +28,13 @@ p.currentWeather-date {
   padding-inline-start: 1rem;
   background: url('../images/pin-icon.svg') no-repeat left center;
 }
+
+.currentWeather-item {
+  display: none;
+}
+
+.item-is-selected {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
